@@ -1,6 +1,8 @@
 describe("Página de cadastro", () => {
-	it("Preencher os campos do formulário incorretamente e exibir mensagens ao usuário.", () => {
+	beforeEach(() => {
 		cy.visit("https://adopet-frontend-cypress.vercel.app/");
+	});
+	it("Preencher os campos do formulário incorretamente e exibir mensagens ao usuário.", () => {
 		cy.get('[data-test="register-button"]').click();
 		cy.get('[data-test="submit-button"]').click();
 		cy.contains("É necessário informar um endereço de email").should(
