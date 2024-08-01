@@ -21,7 +21,7 @@ describe("Página de login", () => {
 
 	it("Deve falhar mesmo que os campos sejam preenchidos corretamente", () => {
 		cy.login("ana@email.com", "Senha123");
-		cy.wait("stubPost");
+		cy.wait("@stubPost");
 		cy.contains("Falha no login. Consulte suas credenciais.").should(
 			"be.visible"
 		);
