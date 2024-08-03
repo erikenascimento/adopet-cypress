@@ -1,5 +1,5 @@
 describe("Api ADopet", () => {
-	const authorization = `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMTY0M2NkNi03MTEyLTQxNWItOTVkMi0wNzkwNGIwZDFhMWMiLCJhZG9wdGVyTmFtZSI6IkFuYSBkZSBKZXN1cyIsImlhdCI6MTcyMjU0MDkwMiwiZXhwIjoxNzIyODAwMTAyfQ.iTO8hVVcM6Vo1wt8D-OrVKlZ19yqkhZAD29_AxWRSQ8`;
+	const authorization = `Bearer `;
 
 	it("Mensagens da API", () => {
 		cy.request({
